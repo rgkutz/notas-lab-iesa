@@ -218,6 +218,7 @@ h1 {
 section {
     margin-bottom: 50px;
 }
+
 footer {
     background-color: #121212;
     padding: 20px;
@@ -233,6 +234,7 @@ footer {
 .github-logo:hover {
     transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
 }
+
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;  /* Ajusta la distancia desde la parte inferior */
@@ -252,4 +254,14 @@ footer {
     transform: scale(1.1);  /* Efecto de ampliación al pasar el ratón */
 }
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .student-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .student-card {
+        width: 90%;
+    }
+}
