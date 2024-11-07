@@ -179,5 +179,220 @@ h1 {
 #menu li a:hover {
     color: #76ff03;
 }
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #B3E283; /* Verde claro */
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.student-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.student-card {
+    background: #1C1C1C;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.student-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 255, 123, 0.2);
+}
+
+.student-card h2 {
+    font-size: 1.8em;
+    color: #B3E283;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.grade {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5em;
+    color: #8fd15a;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 255, 123, 0.3);
+    font-weight: 700;
+}
+
+.student-card a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #B3E283;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.student-card a:hover {
+    color: #8fd15a;
+    border-bottom: 2px solid #8fd15a;
+}
+
+.student-card ul {
+    list-style-type: none;
+    padding: 0;
+    color: #B0B0B0;
+    text-align: left;
+    font-weight: 300;
+}
+
+.student-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+.student-card li:last-child {
+    border-bottom: none;
+}
+
+.btn {
+    background-color: #333;
+    color: #b2ff59;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #76ff03;
+    color: #333;
+    box-shadow: 0px 4px 15px rgba(118, 255, 3, 0.5);
+}
+
+/* Estilos para el menú hamburguesa */
+.nav-menu {
+    position: relative;
+    z-index: 10;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #b2ff59;
+    transition: 0.3s;
+}
+
+/* Menú oculto por defecto */
+#menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 15;
+}
+
+/* Mostrar el menú cuando está abierto */
+.nav-menu.open #menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#menu li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#menu li a {
+    color: #b2ff59;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#menu li a:hover {
+    color: #76ff03;
+}
+
+/* Sección de Notas */
+#notas {
+    background-color: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#notas h2 {
+    font-size: 2em;
+    color: #B3E283;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las secciones de "Acerca de mí" y "Contacto" */
+#acerca-de-mi, #contacto {
+    background-color: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#acerca-de-mi h2, #contacto h2 {
+    font-size: 2em;
+    color: #B3E283;
+    margin-bottom: 20px;
+}
+
+/* Estilo adicional para mejor separación */
+section {
+    margin-bottom: 50px;
+}
+
 
 
