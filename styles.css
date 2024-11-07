@@ -120,7 +120,7 @@ h1 {
 
 /* Estilos para el menú hamburguesa */
 .nav-menu {
-    position: none;
+    display: none;
 }
 @media(max-width:768){
     .nav-menu{
