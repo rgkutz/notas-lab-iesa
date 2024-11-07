@@ -235,6 +235,7 @@ footer {
     transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
 }
 
+/* Estilo para el ícono flotante de WhatsApp */
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;  /* Ajusta la distancia desde la parte inferior */
