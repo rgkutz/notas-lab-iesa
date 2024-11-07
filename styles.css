@@ -119,70 +119,65 @@ h1 {
 }
 
 /* Estilos para el menú hamburguesa */
-.nav-menu {
-    display: none;
-}
-@media(max-width:768){
-    .nav-menu{
-        display: flex;
-        position: relative;
-        z-index: 99;
+@media (max-width: 768px) {
+    .nav-menu {
+      display: flex;
+      position: relative;
+      z-index: 99;
     }
-}
-
-.hamburger {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #b2ff59;
-    transition: 0.3s;
-}
-
-/* Menú oculto por defecto */
-#menu {
+  }
+  .nav-menu {
     display: none;
-    position: fixed;
-    top: 70px;
-    right: 20px;
-    background-color: #333;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    z-index: 15;
-}
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+  }
 
-/* Mostrar el menú cuando está abierto */
-.nav-menu.open #menu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
+  .hamburger span {
+    width: 100%;
+    height: 3px;
+    background: #000;
+  }
 
-#menu li {
-    text-align: center;
-    margin: 10px 0;
-}
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
 
-#menu li a {
-    color: #b2ff59;
-    text-decoration: none;
-    font-size: 18px;
-}
+    .nav-menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+    }
 
-#menu li a:hover {
-    color: #76ff03;
-}
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-menu li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
 
 /* Sección de Notas */
 #notas {

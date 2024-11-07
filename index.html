@@ -9,10 +9,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <script>
-function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('open');
-}
+document.querySelector(".hamburger").addEventListener("click", function () {
+    document.querySelector(".nav-menu").classList.toggle("active");});
 </script>
 
     
@@ -23,17 +21,19 @@ function toggleMenu() {
     <h3>1° año turno mañana</h3>
     <h3>Profesor Ing. Gabriel Kutz</h3>
     <nav class="nav-menu">
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul id="menu">
-            <li><a href="#notas">Notas</a></li>
-            <li><a href="#acerca">Acerca de mí</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+      
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 </header>
     <main>
     <section id="notas">
