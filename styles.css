@@ -120,8 +120,14 @@ h1 {
 
 /* Estilos para el menú hamburguesa */
 .nav-menu {
-    position: relative;
-    z-index: 10;
+    position: none;
+}
+@media(max-width:768){
+    .nav-menu{
+        display: flex;
+        position: relative;
+        z-index: 99;
+    }
 }
 
 .hamburger {
