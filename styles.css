@@ -233,4 +233,23 @@ footer {
 .github-logo:hover {
     transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
 }
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;  /* Ajusta la distancia desde la parte inferior */
+    right: 20px;   /* Ajusta la distancia desde la parte derecha */
+    z-index: 1000; /* Asegura que el icono esté sobre otros elementos */
+}
+
+.whatsapp-logo {
+    width: 60px;  /* Tamaño del logo */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para resaltar */
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-logo:hover {
+    transform: scale(1.1);  /* Efecto de ampliación al pasar el ratón */
+}
+
 
