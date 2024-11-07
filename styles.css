@@ -100,3 +100,20 @@ h1 {
 .student-card li:last-child {
     border-bottom: none;
 }
+.btn {
+    background-color: #333;
+    color: #b2ff59;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #76ff03;
+    color: #333;
+    box-shadow: 0px 4px 15px rgba(118, 255, 3, 0.5);
+}
+
