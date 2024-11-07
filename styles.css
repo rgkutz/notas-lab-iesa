@@ -118,6 +118,7 @@ h1 {
 /* Estilos para el menú hamburguesa */
 .nav-menu {
     position: relative;
+    z-index: 10;
 }
 
 .hamburger {
@@ -135,12 +136,12 @@ h1 {
     transition: 0.3s;
 }
 
-/* Menu oculto por defecto */
+/* Menú oculto por defecto */
 #menu {
     display: none;
-    position: absolute;
-    top: 50px;
-    right: 0;
+    position: fixed;
+    top: 70px;
+    right: 20px;
     background-color: #333;
     list-style: none;
     padding: 10px;
@@ -149,7 +150,7 @@ h1 {
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    z-index: 10; /* Asegura que esté encima de otros contenidos */
+    z-index: 15; /* Asegura que esté encima del contenido */
 }
 
 /* Mostrar el menú cuando está abierto */
@@ -169,6 +170,11 @@ h1 {
     text-decoration: none;
     font-size: 18px;
 }
+
+#menu li a:hover {
+    color: #76ff03;
+}
+
 
 #menu li a:hover {
     color: #76ff03;
