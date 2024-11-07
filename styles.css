@@ -119,15 +119,15 @@ h1 {
 }
 
 /* Estilos para el menú hamburguesa */
+.nav-menu {
+    display: none;
+  }
 @media (max-width: 768px) {
     .nav-menu {
       display: flex;
       position: relative;
       z-index: 99;
     }
-  }
-  .nav-menu {
-    display: none;
   }
   .hamburger {
     display: none;
@@ -144,7 +144,7 @@ h1 {
   .hamburger span {
     width: 100%;
     height: 3px;
-    background: #000;
+    background: #76ff03;
   }
 
   @media (max-width: 768px) {
