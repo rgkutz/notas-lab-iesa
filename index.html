@@ -1,3 +1,4 @@
+html:
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -8,16 +9,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
-    <script>
-document.querySelector(".hamburger").addEventListener("click", function () {
-    document.querySelector(".nav-menu").classList.toggle("active");});
+<script>
+  function toggleMenu() {
+    document.getElementById("hamburger").addEventListener("click", function () {
+      document.getElementById("nav-menu").classList.toggle("active");
+    });
+  }
+  document.addEventListener("DOMContentLoaded", toggleMenu);
 </script>
 <body>  
     <header style="text-align: center; margin: 20px 0;">
-    <h1>Portafolios de Alumnos Laboratorio- IESA</h1>
+      <button class="hamburger"id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <h1>Portafolios de Alumnos Laboratorio- IESA</h1>
     <h3>1° año turno mañana</h3>
     <h3>Profesor Ing. Gabriel Kutz</h3>
-    <nav class="nav-menu">
+    <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -25,11 +35,7 @@ document.querySelector(".hamburger").addEventListener("click", function () {
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <button class="hamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      
 </header>
     <main>
     <section id="notas">
@@ -147,19 +153,13 @@ document.querySelector(".hamburger").addEventListener("click", function () {
     <a href="https://wa.me/3764760385" target="_blank" class="whatsapp-icon">
     <img src="whatsapp-svgrepo-com.svg" alt="WhatsApp" class="whatsapp-logo">
     </a>
-     
-    <img src="ruta_del_logo_de_whatsapp.png" alt="WhatsApp" class="whatsapp-logo">
-    </a>
 
 </section>
 
 </main>
    <br>
     <footer>
-        <p>Este proyecto fue realizado integramente con IA</p>
-        <br>
-        <a href="https://github.com/rgkutz/notas-lab-iesa" target="_blank">
-        
+    <a href="https://github.com/rgkutz/notas-lab-iesa" target="_blank">GitHub Repository</a>
         
     </a>
 </footer>
